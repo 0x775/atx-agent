@@ -613,6 +613,12 @@ func main() {
 
 	// 	go tunnel.Heratbeat()
 	// }
+	
+	//websocket.test
+	go func(){
+		server2 :=NewSockServer()
+		server2.initServer()
+	}()
 
 	server := NewServer()
 
